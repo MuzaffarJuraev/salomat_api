@@ -3,6 +3,7 @@ const clothesRoute = require("./clothes");
 const cookiesRoute = require("./cookies");
 const drinksRoute = require("./drinks");
 const stationeryRoute = require("./stationery");
+const homeRoute = require("./home");
 
 module.exports = {
   foodRoute,
@@ -10,4 +11,5 @@ module.exports = {
   cookiesRoute,
   drinksRoute,
   stationeryRoute,
+  homeRoute,
 };

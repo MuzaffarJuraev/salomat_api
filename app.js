@@ -6,6 +6,7 @@ const {
   cookiesRoute,
   drinksRoute,
   stationeryRoute,
+  homeRoute,
 } = require("./route");
 
 const app = express();
@@ -19,6 +20,7 @@ connectDb((err) => {
 
 app.use(express.json());
 
+app.use("/", homeRoute);
 app.use("/food", foodRoute);
 app.use("/clothes", clothesRoute);
 app.use("/cookies", cookiesRoute);
